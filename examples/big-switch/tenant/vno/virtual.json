@@ -1,0 +1,89 @@
+{
+    "switches" : [
+        { "id" : 1,
+          "name" : "vs1",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:00:01:01",
+                "ingress" : true,
+                "egress" : true
+              },
+              { "number" : 2,
+                "mac" : "00:00:00:00:01:02",
+                "ingress" : true,
+                "egress" : true
+              },
+              { "number" : 3,
+                "mac" : "00:00:00:00:01:03",
+                "ingress" : true,
+                "egress" : true
+              },
+              { "number" : 4,
+                "mac" : "00:00:00:00:01:04",
+                "ingress" : true,
+                "egress" : true
+              }
+          ]
+        }
+    ],
+    "hosts" : [
+        { "id" : 21,
+          "name" : "h1",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:01:00:01"
+              }
+          ]
+        },
+        { "id" : 22,
+          "name" : "h2",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:02:00:01"
+              }
+          ]
+        },
+        { "id" : 23,
+          "name" : "h3",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:03:00:01"
+              }
+          ]
+        },
+        { "id" : 24,
+          "name" : "h4",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:04:00:01"
+              }
+          ]
+        }
+    ],
+    "links" : [
+        { "id" : 1,
+          "src" : 21,
+          "dst" : 1,
+          "srcPort" : 1,
+          "dstPort" : 1
+        },
+        { "id" : 2,
+          "src" : 22,
+          "dst" : 1,
+          "srcPort" : 1,
+          "dstPort" : 2
+        },
+        { "id" : 3,
+          "src" : 23,
+          "dst" : 1,
+          "srcPort" : 1,
+          "dstPort" : 3
+        },
+        { "id" : 4,
+          "src" : 24,
+          "dst" : 1,
+          "srcPort" : 1,
+          "dstPort" : 4
+        }
+    ]
+}

@@ -1,0 +1,30 @@
+<service-config>
+  <forwarding-path>
+    <name>Forwarding path1</name>
+    <acl>
+      <net-name>tenant2_net</net-name>
+      <dest-port>22</dest-port>
+      <ip-proto>tcp</ip-proto>
+    </acl>
+    <node>
+      <name>NSD001_CP01</name>
+      <domain>dc1</domain>
+    </node>
+    <node>
+      <name>VNF1_CP_DP</name>
+      <domain>dc2</domain>
+      <vdu-name>myCloudDpi</vdu-name>
+      <image>dpi-docker</image>
+    </node>
+    <node>
+      <name>VNF2_CP_DP</name>
+      <domain>dc3</domain>
+      <vdu-name>myFw</vdu-name>
+      <image>firewall-docker</image>
+    </node>
+    <node>
+      <name>NSD001_CP02</name>
+      <domain>dc2</domain>
+    </node>
+  </forwarding-path>
+</service-config>

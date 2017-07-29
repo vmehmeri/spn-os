@@ -1,0 +1,158 @@
+{
+    "switches" : [
+        { "id" : 1,
+          "name" : "s1",
+          "type" : "packet",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:00:01:01",
+                "type" : "packet",
+                "ingress" : true,
+                "egress" : true
+              },
+              { "number" : 2,
+                "mac" : "00:00:00:00:01:02",
+                "type" : "packet",
+                "ingress" : true,
+                "egress" : true
+              },
+              { "number" : 3,
+                "mac" : "00:00:00:00:01:03",
+                "type" : "packet"
+              }
+          ]
+        },
+        { "id" : 2,
+          "name" : "s2",
+          "type" : "packet",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:00:02:01",
+                "type" : "packet"
+              },
+              { "number" : 2,
+                "mac" : "00:00:00:00:02:02",
+                "type" : "packet"
+              }
+          ]
+        },
+        { "id" : 3,
+          "name" : "s3",
+          "type" : "packet",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:00:03:01",
+                "type" : "packet"
+              },
+              { "number" : 2,
+                "mac" : "00:00:00:00:03:02",
+                "type" : "packet"
+              }
+          ]
+        },
+        { "id" : 4,
+          "name" : "s4",
+          "type" : "packet",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:00:04:01",
+                "type" : "packet",
+                "ingress" : true,
+                "egress" : true
+              },
+              { "number" : 2,
+                "mac" : "00:00:00:00:04:02",
+                "type" : "packet",
+                "ingress" : true,
+                "egress" : true
+              },
+              { "number" : 3,
+                "mac" : "00:00:00:00:04:03",
+                "type" : "packet"
+              }
+          ]
+        }
+    ],
+    "hosts" : [
+        { "id" : 21,
+          "name" : "h1",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:01:00:01",
+                "type" : "packet"
+              }
+          ]
+        },
+        { "id" : 22,
+          "name" : "h2",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:02:00:01",
+                "type" : "packet"
+              }
+          ]
+        },
+        { "id" : 23,
+          "name" : "h3",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:03:00:01",
+                "type" : "packet"
+              }
+          ]
+        },
+        { "id" : 24,
+          "name" : "h4",
+          "ports" : [
+              { "number" : 1,
+                "mac" : "00:00:00:04:00:01",
+                "type" : "packet"
+              }
+          ]
+        }
+    ],
+    "links" : [
+        { "id" : 1,
+          "src" : 21,
+          "dst" : 1,
+          "srcPort" : 1,
+          "dstPort" : 1
+        },
+	{ "id" : 2,
+          "src" : 22,
+          "dst" : 1,
+          "srcPort" : 1,
+          "dstPort" : 2
+        },
+	{ "id" : 3,
+          "src" : 1,
+          "dst" : 2,
+          "srcPort" : 3,
+          "dstPort" : 1
+        },
+	{ "id" : 4,
+          "src" : 2,
+          "dst" : 3,
+          "srcPort" : 2,
+          "dstPort" : 1
+        },
+	{ "id" : 5,
+          "src" : 3,
+          "dst" : 4,
+          "srcPort" : 2,
+          "dstPort" : 3
+        },
+	{ "id" : 6,
+          "src" : 4,
+          "dst" : 23,
+          "srcPort" : 1,
+          "dstPort" : 1
+        },
+	{ "id" : 7,
+          "src" : 4,
+          "dst" : 24,
+          "srcPort" : 2,
+          "dstPort" : 1
+        }
+    ]
+}

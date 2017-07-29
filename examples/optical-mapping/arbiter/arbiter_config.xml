@@ -1,0 +1,39 @@
+<config>
+	<global>
+		<arbiter-ip-address>192.168.137.110</arbiter-ip-address>
+		<physical-file-location>../network/physical.json</physical-file-location>
+	</global>
+	<tenants>
+		<tenant id="1">
+			<network>
+				<name>tenant1_net</name>
+				<address-space>10.0.0.0/8</address-space>
+			</network>
+			<hosts>
+				<host id="1">
+					<mgmt-ip-address>192.168.137.10</mgmt-ip-address>
+					<dp-ip-address>10.0.0.1</dp-ip-address>
+					<domain>dc1</domain>
+				</host>
+				<host id="2">
+					<mgmt-ip-address>192.168.137.30</mgmt-ip-address>
+					<dp-ip-address>10.0.0.2</dp-ip-address>
+					<domain>dc3</domain>
+				</host>
+			</hosts>
+			<optical-mappings>
+				<optical-mapping id="1">
+					<file-location>../tenant/optical_mapping1.json</file-location>
+				</optical-mapping>
+				<optical-mapping id="2">
+					<file-location>../tenant/optical_mapping2.json</file-location>
+				</optical-mapping>
+			</optical-mappings>
+			<virtual-mappings>
+				<virtual-mapping id="1">
+					<file-location>../tenant/virtual_mapping1.json</file-location>
+				</virtual-mapping>
+			</virtual-mappings>
+		</tenant>
+	</tenants>
+</config>

@@ -1,0 +1,36 @@
+[
+    { "start" : 1,
+      "startPort" : 2,
+      "stop" : 2,
+      "stopPort" : 2,
+      "wavelength" : 1,
+      "bidirectional" : true,
+      "path" : [
+          { "src" : 1,
+            "dst" : 11,
+            "srcPort" : 2,
+            "dstPort" : 1
+          },
+          { "src" : 11,
+            "dst" : 12,
+            "srcPort" : 2,
+            "dstPort" : 1
+          },
+          { "src" : 12,
+            "dst" : 13,
+            "srcPort" : 2,
+            "dstPort" : 1
+          },
+          { "src" : 13,
+            "dst" : 14,
+            "srcPort" : 2,
+            "dstPort" : 2
+          },
+          { "src" : 14,
+            "dst" : 2,
+            "srcPort" : 1,
+            "dstPort" : 2
+          }
+      ]
+    }
+]

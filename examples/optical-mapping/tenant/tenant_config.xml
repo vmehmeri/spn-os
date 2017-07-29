@@ -1,0 +1,14 @@
+<config>
+	<global>
+		<tenant-id>1</tenant-id>
+		<arbiter-ip-address>192.168.137.110</arbiter-ip-address>
+		<controller-ip-address>192.168.137.110</controller-ip-address>
+		<controller-port>6633</controller-port>
+		<controller-type>default</controller-type>
+		<netkat-ip-address>192.168.137.110</netkat-ip-address>
+	</global>
+	<vno>
+		<name>vno1</name>
+		<virtual-file-location>/root/vno1/virtual.json</virtual-file-location>
+	</vno>
+</config>
